@@ -4,12 +4,12 @@ use clap::Parser;
 
 #[derive(Parser, Debug)]
 #[command(version, about, long_about = None)]
-pub struct Ceaser {
+pub struct Caesar {
     data: String,
     key: i32,
 }
 
-impl Crypto for Ceaser {
+impl Crypto for Caesar {
     fn encrypt(&self) -> Result<String, super::CryptoError> {
         if self.key < 1 {
             return Err(CryptoError::InvalidKey);

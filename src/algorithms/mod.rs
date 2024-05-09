@@ -1,10 +1,10 @@
 use std::fmt::Display;
 
-pub use ceaser::Ceaser;
+pub use caesar::Caesar;
 pub use spartan::Spartan;
 pub use vigenere::Vigenere;
 
-pub mod ceaser;
+pub mod caesar;
 pub mod spartan;
 pub mod vigenere;
 

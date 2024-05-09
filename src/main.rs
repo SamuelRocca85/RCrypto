@@ -13,7 +13,7 @@ fn main() -> ExitCode {
     let args = Args::parse();
 
     match &args.algorithm {
-        Algorithms::Ceaser(algo) => {
+        Algorithms::Caesar(algo) => {
             let data: Result<String, CryptoError>;
 
             if args.encrypt {
