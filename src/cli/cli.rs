@@ -1,4 +1,4 @@
-pub use crate::algorithms::{Ceaser, Spartan};
+pub use crate::algorithms::{Ceaser, Spartan, Vigenere};
 pub use clap::{Parser, Subcommand};
 
 #[derive(Parser, Debug)]
@@ -18,4 +18,5 @@ pub struct Args {
 pub enum Algorithms {
     Ceaser(Ceaser),
     Spartan(Spartan),
+    Vigenere(Vigenere),
 }

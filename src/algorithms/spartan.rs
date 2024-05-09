@@ -1,8 +1,6 @@
-use clap::Parser;
-
-use crate::algorithms::CryptoError;
-
 use super::Crypto;
+use crate::algorithms::CryptoError;
+use clap::Parser;
 
 type Escitala = Vec<Vec<char>>;
 
@@ -98,13 +96,13 @@ impl Crypto for Spartan {
             }
         }
 
-        let mut encripted = String::new();
+        let mut decripted = String::new();
         for i in 0..rows {
             for j in 0..self.key {
-                encripted.push(escitala[i as usize][j as usize]);
+                decripted.push(escitala[i as usize][j as usize]);
             }
         }
 
-        Ok(encripted)
+        Ok(decripted)
     }
 }

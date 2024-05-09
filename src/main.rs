@@ -59,5 +59,28 @@ fn main() -> ExitCode {
                 }
             }
         }
+        Algorithms::Vigenere(algo) => {
+            let data: Result<String, CryptoError>;
+
+            if args.encrypt {
+                data = algo.encrypt();
+            } else if args.decrypt {
+                data = algo.decrypt();
+            } else {
+                println!("No se especifico un modo de encripcion");
+                return ExitCode::FAILURE;
+            }
+
+            match data {
+                Ok(message) => {
+                    println!("{}", message);
+                    return ExitCode::SUCCESS;
+                }
+                Err(e) => {
+                    println!("Error: {}", e);
+                    return ExitCode::FAILURE;
+                }
+            }
+        }
     }
 }
