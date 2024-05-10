@@ -27,7 +27,7 @@ Se indica la operacion **-e** para encriptar o **-d** para desencriptar.
 \\
 El ALGORITMO puede ser uno de los siguientes 
 |Algoritmo|Clave|
-|_________|_____|
+|---------|------|
 |caesar|Numero Entero|
 |spartan|Numero Entero|
 |vigenere|Cadena de texto|
