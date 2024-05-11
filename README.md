@@ -17,6 +17,8 @@ rustup default stable-x86_64-pc-windows-gnu
 
 ### Compilar
 
+Dentro de la carpeta raíz del proyecto ejecutar el siguiente comando
+
 ```bash
 cargo build --release
 ```
@@ -40,8 +42,7 @@ La sintaxis basica es la siguiente
 ```bash
 .\crypto.exe [-e|-d] <ALGORITMO> <DATA> <LLAVE>
 ```
-Se indica la operacion **-e** para encriptar o **-d** para desencriptar.
-\\
+Se indica la operacion **-e** para encriptar o **-d** para desencriptar. \\
 El ALGORITMO puede ser uno de los siguientes 
 |Algoritmo|Clave|
 |---------|------|
@@ -64,7 +65,7 @@ El resultado sera el mensaje cifrado. Para desencriptar la el mensaje cifrado se
 .\crypto.exe -d caesar "obcojobjdxjwoxbktojbomaocy" 10
 ```
 
-El resultado deberia imprimir por consola el mensaje descifrado **Este es un mensaje secreto**
+El resultado muestra por consola el mensaje descifrado **Este es un mensaje secreto**
 
 
 
