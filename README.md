@@ -42,8 +42,7 @@ La sintaxis basica es la siguiente
 ```bash
 .\crypto.exe [-e|-d] <ALGORITMO> <DATA> <LLAVE>
 ```
-Se indica la operacion **-e** para encriptar o **-d** para desencriptar. \\
-El ALGORITMO puede ser uno de los siguientes 
+Se indica la operacion **-e** para encriptar o **-d** para desencriptar. El ALGORITMO puede ser uno de los siguientes 
 |Algoritmo|Clave|
 |---------|------|
 |caesar|Numero Entero|
@@ -59,7 +58,7 @@ Para encriptar "Este es un mensaje secreto" con el algoritmo caesar y la clave 1
 ```bash
 .\crypto.exe -e caesar "Este es un mensaje secreto" 10
 ```
-El resultado sera el mensaje cifrado. Para desencriptar la el mensaje cifrado se cambia la opcion **-e** a **-d** y la DATApor el mensaje cifrado.
+El resultado sera el mensaje cifrado. Para desencriptar la el mensaje cifrado se usa la opcion **-d** y se ingresa el mensaje cifrado.
 
 ```bash
 .\crypto.exe -d caesar "obcojobjdxjwoxbktojbomaocy" 10
